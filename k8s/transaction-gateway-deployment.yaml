@@ -1,0 +1,6 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: transaction-gateway
+spec:
+  replicas: 2
