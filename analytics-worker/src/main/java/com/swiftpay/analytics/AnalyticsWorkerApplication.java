@@ -1,7 +1,11 @@
 package com.swiftpay.analytics;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class AnalyticsWorkerApplication {
     public static void main(String[] args) {
-        System.out.println("Analytics Worker Started");
+        SpringApplication.run(AnalyticsWorkerApplication.class, args);
     }
 }
