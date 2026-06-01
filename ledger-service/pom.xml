@@ -42,18 +42,15 @@
     </dependencies>
 
     <build>
+        <finalName>ledger-service</finalName>        <!-- produces ledger-service.jar -->
         <plugins>
-            <!-- ✅ Step 4: This plugin is what makes 'mvn spring-boot:run' work
-                 and produces a runnable fat JAR with 'mvn package'            -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <executions>
                     <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
+                        <goals><goal>repackage</goal></goals>
                     </execution>
                 </executions>
             </plugin>

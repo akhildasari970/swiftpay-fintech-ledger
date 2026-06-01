@@ -10,8 +10,10 @@
         <module name="transaction-gateway (1)" />
         <module name="common-lib" />
         <module name="ledger-service" />
-        <module name="analytics-worker (1)" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="analytics-worker (1)" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

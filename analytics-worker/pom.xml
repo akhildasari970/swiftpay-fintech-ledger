@@ -38,6 +38,7 @@
     </dependencies>
 
     <build>
+        <finalName>analytics-worker</finalName>      <!-- produces analytics-worker.jar -->
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -45,9 +46,7 @@
                 <version>${spring-boot.version}</version>
                 <executions>
                     <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
+                        <goals><goal>repackage</goal></goals>
                     </execution>
                 </executions>
             </plugin>

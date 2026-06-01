@@ -19,12 +19,22 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
+          cache: maven
 
-      - name: Build
-        run: mvn clean install
+      - name: Build common-lib first
+        run: mvn clean install -pl common-lib -am -DskipTests
+
+      - name: Package all modules
+        run: mvn package -DskipTests
 
       - name: Run Tests
         run: mvn test
+
+      - name: Verify JARs exist
+        run: |
+          ls transaction-gateway/target/
+          ls ledger-service/target/
+          ls analytics-worker/target/
 
       - name: Build Docker Images
         run: docker compose build
