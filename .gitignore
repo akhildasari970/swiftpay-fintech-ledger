@@ -1,0 +1,18 @@
+# Maven
+target/
+
+# Java
+*.class
+*.jar
+*.jar.original
+
+# IntelliJ
+.idea/
+*.iml
+
+# Zip files
+*.zip
+
+# Maven generated
+maven-status/
+maven-archiver/
