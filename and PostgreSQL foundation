@@ -1,0 +1,17 @@
+.gitignore
+analytics-worker/pom.xml
+ledger-service/pom.xml
+ledger-service/src/main/java/com/swiftpay/ledger/entity/Account.java
+ledger-service/src/main/java/com/swiftpay/ledger/producer/PaymentCompletedProducer.java
+ledger-service/src/main/java/com/swiftpay/ledger/producer/PaymentFailedProducer.java
+ledger-service/src/main/java/com/swiftpay/ledger/repository/AccountRepository.java
+ledger-service/src/main/resources/application.yml
+pom.xml
+transaction-gateway/pom.xml
+transaction-gateway/src/main/java/com/swiftpay/gateway/config/KafkaConfig.java
+transaction-gateway/src/main/java/com/swiftpay/gateway/config/RedisConfig.java
+transaction-gateway/src/main/java/com/swiftpay/gateway/entity/Payment.java
+transaction-gateway/src/main/java/com/swiftpay/gateway/producer/PaymentProducer.java
+transaction-gateway/src/main/java/com/swiftpay/gateway/repository/PaymentRepository.java
+transaction-gateway/src/main/java/com/swiftpay/gateway/service/IdempotencyService.java
+transaction-gateway/src/main/resources/application.yml
